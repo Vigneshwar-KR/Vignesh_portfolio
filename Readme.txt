@@ -1,6 +1,7 @@
-Thanks for downloading this template!
+# Vigneshwar Portfolio
 
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Website-blue?style=for-the-badge)](https://Vigneshwar-KR.github.io/Vignesh_portfolio/)
+
+Personal portfolio website showcasing professional experience, AI & autonomous systems projects, technical skills, education, and certifications.
+
+**Link:** [vigneshwar-kr.github.io/Vignesh_portfolio](https://Vigneshwar-KR.github.io/Vignesh_portfolio/)
