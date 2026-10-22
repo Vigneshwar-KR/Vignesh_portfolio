@@ -27,13 +27,17 @@
 
       let formData = new FormData( thisForm );
 
-      if (window.location.protocol === 'file:') {
+      const staticEmail = thisForm.getAttribute('data-static-email');
+      const isStaticHosting = window.location.protocol === 'file:' ||
+        window.location.hostname.endsWith('.github.io');
+
+      if (isStaticHosting && staticEmail) {
         const name = thisForm.elements.name.value.trim();
         const email = thisForm.elements.email.value.trim();
         const subject = thisForm.elements.subject.value.trim();
         const message = thisForm.elements.message.value.trim();
         const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-        window.location.href = `mailto:vigneshwar.kr@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
+        window.location.href = `mailto:${staticEmail}?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
         thisForm.querySelector('.loading').classList.remove('d-block');
         thisForm.querySelector('.sent-message').textContent = 'Your email app will open to send this message.';
         thisForm.querySelector('.sent-message').classList.add('d-block');
